@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fall Limited Edition Sneakers</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">sneakers</div>
+            <ul>
+                <li><a href="#">Collections</a></li>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="cart-profile">
+                <div class="cart-icon">🛒</div>
+                <div class = "cart-dropdown">
+                    <div>Cart</div>
+                    <div class="cart-dropdown-content">
+                        <span>
+                            <img src="image-product-1.jpg" width="50px"/>
+                        </span>
+                        <span style="margin:5px; padding:5px;">
+                            <div>Fall Limited Edition Sneakers</div>
+                            <div><span>$125.00</span> <span id="count">x3</span> <span id="total">37</span></div>
+                        </span>
+                        <span>
+                            <img id= "delete-icon" src="icon-delete.svg"/>
+                        </span>
+                    </div>
+                    <div class="cart-dropdown-content" style="color: white; background-color: orange;">Checkout</div>
+                    <span class="empty-cart">
+                        The cart is empty.
+                    </span>
+                    
+                </div>
+                <img src="image-avatar.png" alt="Profile" class="profile-pic">
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="product-container">
+            <div class="product-images">
+                <img src="image-product-1.jpg" alt="Sneakers" class="main-image">
+                <div class="thumbnail-images">
+                    <img class = "thumbnail-image" src="image-product-1.jpg" alt="Sneaker 1">
+                    <img class = "thumbnail-image" src="image-product-2.jpg" alt="Sneaker 2">
+                    <img class = "thumbnail-image" src="image-product-3.jpg" alt="Sneaker 3">
+                    <img class = "thumbnail-image" src="image-product-4.jpg" alt="Sneaker 4">
+                </div>
+            </div>
+            <div class="product-details">
+                <h2>Sneaker Company</h2>
+                <h1>Fall Limited Edition Sneakers</h1>
+                <p>These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.</p>
+                <div class="price">
+                    <span class="current-price">$125.00</span>
+                    <span class="discount">50%</span>
+                    <span class="original-price">$250.00</span>
+                </div>
+                <div class="quantity-cart">
+                    <div class="quantity-control">
+                        <button id="decrease">-</button>
+                        <input type="number" id="quantity" value="0" readonly>
+                        <button id="increase">+</button>
+                    </div>
+                    <button class="add-to-cart">Add to cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="overlay" style="justify-content: center;">
+            <div class="popup-content" style="justify-content: center; position: relative;">
+                <div class="close-overlay">&times;</div> <!-- Close button -->
+                <div class="arrow left-arrow">&#10094;</div> 
+                <div class="main-image" style="justify-content: center;">
+                    <img width="400px" id="main_image" src="image-product-1.jpg" />
+                </div>
+                <div class="arrow right-arrow">&#10095;</div> 
+                <div class="bottom-images">
+                    <img id="bi1" width="100px" src="image-product-1.jpg" alt="Sneaker 1">
+                    <img id="bi2" width="100px" src="image-product-2.jpg" alt="Sneaker 2">
+                    <img id="bi3" width="100px" src="image-product-3.jpg" alt="Sneaker 3">
+                    <img id="bi4" width="100px" src="image-product-4.jpg" alt="Sneaker 4">
+                </div>
+            </div>            
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
